@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--            <TextView-->
+<!--                android:id="@+id/idTextHeader"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:textSize="20sp"-->
+<!--                android:layout_marginStart="10pt"-->
+<!--                android:text="id"/>-->
+
+            <TextView
+                android:id="@+id/loginTextHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginStart="10pt"
+                android:text="Login"/>
+
+            <TextView
+                android:id="@+id/valueTextHeader"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginStart="10pt"
+                android:text="Value"/>
+
+            <TextView
+                android:id="@+id/dateTimeTextHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:textSize="20sp"
+                android:text="date&amp;time"
+                android:layout_marginStart="10pt"
+                android:gravity="center"/>
+</LinearLayout>

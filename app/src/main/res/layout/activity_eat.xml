@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calorie_counter.EatActivity">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryBlue"
+        android:gravity="center"
+        android:padding="@dimen/regularPad"
+        android:text="@string/record"
+        android:textColor="@color/colorPrimaryOff"
+        android:textSize="@dimen/largeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/foodButtons"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/title">-->
+<!--        <Button-->
+<!--            android:layout_width="180dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/button"-->
+<!--            android:text="@string/choose_from_list"-->
+<!--            android:textColor="@color/colorPrimaryOff"-->
+<!--            android:textSize="@dimen/largeText"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            />-->
+<!--        <Button-->
+<!--            android:layout_width="180dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:background="@drawable/button"-->
+<!--            android:onClick="goToRecordEatInput"-->
+<!--            android:text="@string/input_new_food"-->
+<!--            android:textColor="@color/colorPrimaryOff"-->
+<!--            android:textSize="@dimen/largeText" />-->
+<!--    </LinearLayout>-->
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/activity_eat_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <LinearLayout
+        android:id="@+id/buttonGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="vertical"
+        android:padding="@dimen/regularPad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/activity_eat_navigation">
+        <ImageButton
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:src="@drawable/adding"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:onClick="goToRecordEatInput"
+            />
+
+        <ImageButton
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:onClick="goToRecordMove"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/stretching_exercises"
+            />
+    </LinearLayout>
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/activity_eat_navigation"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:menu="@menu/calorie_menu"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"/>-->
+
+        <LinearLayout
+        android:id="@+id/activity_eat_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="0.3"
+            android:background="@color/colorPrimaryBlue"
+            android:onClick="goToOverview"
+            android:padding="@dimen/regularPad"
+            android:src="@drawable/ico_overview_wh" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="0.3"
+            android:background="@color/border_blue"
+            android:padding="@dimen/regularPad"
+            android:src="@drawable/ico_record_wh" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="0.3"
+            android:background="@color/colorPrimaryBlue"
+            android:onClick="goToHistory"
+            android:padding="@dimen/regularPad"
+            android:src="@drawable/ico_history_wh" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

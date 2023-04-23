@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/get_start_layout">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/wrapPad"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calorie Calculator"
+            android:paddingBottom="20sp"
+            android:textSize="@dimen/largeText"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/regularText"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:text="Выберите ваш пол" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Женщина"
+
+                android:textColor="@color/colorPrimary"
+                android:onClick="onRadioButtonClicked" />
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Мужчина"
+                android:textColor="@color/colorPrimary"
+                android:onClick="onRadioButtonClicked" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <EditText
+            android:id="@+id/input_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="start"
+            android:layout_marginEnd="5dp"
+            android:textSize="@dimen/regularText"
+            android:hint="Введите возраст"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:layout_marginBottom="20sp"/>
+
+            <EditText
+            android:id="@+id/input_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="start" android:layout_marginStart="5dp"
+            android:textSize="@dimen/regularText"
+            android:hint="Введите рост"
+                android:inputType="number"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginBottom="20sp"/>
+        </LinearLayout>
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:textSize="@dimen/regularText"-->
+        <!--            android:textColor="@color/colorPrimary"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:text="@string/enter_the_weight_you_hope" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/regularText"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:text="Выберите уровень активности"
+            android:paddingBottom="10pt"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+            <RadioButton
+                android:id="@+id/radio_sedentary"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_weight="0"
+                android:onClick="onRadioButtonClicked"
+                android:text="Сидячий образ жизни"
+                android:textColor="@color/colorPrimary" />
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+                    <RadioButton
+                        android:id="@+id/radio_lightly_active"
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_weight="0"
+                        android:text="Низкая активность"
+                        android:textColor="@color/colorPrimary"
+                        android:onClick="onRadioButtonClicked" />
+                    <RadioButton
+                        android:id="@+id/radio_moderate_active"
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_weight="0"
+                        android:text="Умеренная активность"
+                        android:textColor="@color/colorPrimary"
+                        android:onClick="onRadioButtonClicked" />
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+                    <RadioButton
+                        android:id="@+id/radio_very_active"
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_weight="0"
+                        android:text="Высокая активность"
+                        android:textColor="@color/colorPrimary"
+                        android:onClick="onRadioButtonClicked" />
+
+                    <RadioButton
+                        android:id="@+id/radio_extra_active"
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_weight="0"
+                        android:text="Тяжелая активность"
+                        android:textColor="@color/colorPrimary"
+                        android:onClick="onRadioButtonClicked" />
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/targetWeight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:textSize="@dimen/largeText"
+                android:hint="Введите желаемый вес"
+                android:inputType="number"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:gravity="right"
+                android:textSize="@dimen/regularText"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/kg"/>
+
+        </LinearLayout>
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:textSize="@dimen/regularText"-->
+        <!--            android:textColor="@color/colorPrimary"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:text="Введите текущий вес" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5sp">
+
+            <EditText
+                android:id="@+id/currentWeight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:textSize="@dimen/largeText"
+                android:textColor="@color/colorPrimary"
+                android:hint="Введите текущий вес"
+                android:inputType="number"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:gravity="right"
+                android:textSize="@dimen/regularText"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/kg"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/calculateDayCal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/regularText"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorPrimaryOff"
+            android:text="Рассчитать каллории"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Мобилки лабs</string>
+    <string name="login_hint">Введите логин</string>
+    <string name="username">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="password_hint">Введите пароль</string>
+    <string name="login_btn_text">Войти</string>
+    <string name="SQL_hint">Введите строку</string>
+    <string name="save">Сохранить</string>
+    <string name="element_text" />
+
+    <string name="material_calendar_monday">ПН</string>
+    <string name="material_calendar_tuesday">ВТ</string>
+    <string name="material_calendar_wednesday">СР</string>
+    <string name="material_calendar_thursday">ЧТ</string>
+    <string name="material_calendar_friday">ПТ</string>
+    <string name="material_calendar_saturday">СБ</string>
+    <string name="material_calendar_sunday">ВС</string>
+
+    <array name="material_calendar_months_array">
+        <item>Январь</item>
+        <item>Февраль</item>
+        <item>Март</item>
+        <item>Апрель</item>
+        <item>Май</item>
+        <item>Июнь</item>
+        <item>Июль</item>
+        <item>Август</item>
+        <item>Сентябрь</item>
+        <item>Октябрь</item>
+        <item>Ноябрь</item>
+        <item>Декабрь</item>
+    </array>
+
+    <string name="material_calendar_today_button">Сегодня</string>
+    <string name="material_calendar_positive_button">OK</string>
+    <string name="material_calendar_negative_button">Отменить</string>
+    <string name="you_lost">You lost</string>
+    <string name="empty">___</string>
+    <string name="cal">кал</string>
+    <string name="input_new_food">Новое блюдо</string>
+    <string name="choose_from_list">Выберите из списка</string>
+    <string name="exercise">Упражнение :</string>
+    <string name="lost_calories_10mins">Потеряно каллорий(10mins) :</string>
+    <string name="calories_per_100g">Каллорий на 100г :</string>
+    <string name="history">Дневник</string>
+    <string name="choose_date">Выберите дату</string>
+
+    <string name="cal_today">Сегодня каллорий</string>
+    <string name="cal_in_a_day">каллорий в день</string>
+    <string name="you_now_get">Для поддержания веса: </string>
+    <string name="kg">Кг</string>
+    <string name="enter_the_weight_you_hope">Введите желаемый вес</string>
+    <string name="move">Активность</string>
+    <string name="eat">Прием пищи</string>
+    <string name="record">Новая запись</string>
+    <string name="_1_calculate">1. рассчитать</string>
+    <string name="_2_add_to_histry">2. добавить в дневник</string>
+
+</resources>

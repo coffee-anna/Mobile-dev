@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="100dp"
+    android:paddingVertical="150dp"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+
+        <Button
+            android:id="@+id/buttonToFirstActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:text="К лабе 1"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <Button
+            android:id="@+id/buttonToFragmentActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:background="@color/black"
+            android:text="К лабе 2"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="@+id/buttonToFirstActivity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <Button
+            android:id="@+id/buttonToRegistrationActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:background="@color/black"
+            android:text="К лабе 3"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="@+id/buttonToFragmentActivity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <Button
+            android:id="@+id/buttonToHTTPActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:background="@color/black"
+            android:text="К лабе 4"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="@+id/buttonToRegistrationActivity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Button
+            android:id="@+id/buttonToCalorieActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:background="@color/black"
+            android:text="Calorie counter"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="@+id/buttonToHTTPActivity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

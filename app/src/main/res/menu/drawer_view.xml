@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/nav_first_fragment"
+            android:icon="@drawable/text"
+            android:title="TextView" />
+        <item
+            android:id="@+id/nav_second_fragment"
+            android:icon="@drawable/loading"
+            android:title="Button" />
+        <item
+            android:id="@+id/nav_third_fragment"
+            android:icon="@drawable/edit"
+            android:title="EditText" />
+</menu>

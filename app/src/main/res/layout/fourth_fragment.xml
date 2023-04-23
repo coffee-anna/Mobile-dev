@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragmentFour"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="100dp"
+    android:paddingVertical="50dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imageViewFour"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/circle"
+         />
+
+    <TextView
+        android:id="@+id/textView_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text Fragment"
+        android:textSize="25dp"
+        android:layout_marginTop="270dp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/buttonFromFrag4ToMainView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="На главную"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@+id/textView_four"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="100dp"
+    android:layout_marginHorizontal="30dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="end"-->
+<!--        android:orientation="horizontal">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:textSize="20sp"-->
+<!--        android:layout_marginStart="20pt"-->
+<!--        android:text="Всего: "/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/CalorieTotal"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="end"-->
+<!--        android:textSize="20sp"-->
+<!--        android:layout_marginStart="20pt"-->
+<!--        android:text="0"/>-->
+<!--    </LinearLayout>-->
+
+    <EditText
+        android:id="@+id/CalorieFoodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Еда"/>
+    <EditText
+        android:id="@+id/CalorieFoodCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Каллории"/>
+
+    <Button
+        android:id="@+id/CalSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Добавить"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10pt"
+        android:paddingTop="10pt">
+
+        <TextView
+            android:id="@+id/loginTextHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginStart="10pt"
+            android:text="Еда"/>
+
+        <TextView
+            android:id="@+id/valueTextHeader"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginStart="10pt"
+            android:text="Каллории"/>
+
+        <TextView
+            android:id="@+id/dateTimeTextHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Дата"
+            android:layout_marginStart="10pt"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/CalRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/item"/>
+
+</LinearLayout>

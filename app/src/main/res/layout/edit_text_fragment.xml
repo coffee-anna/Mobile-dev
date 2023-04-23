@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editTextFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingHorizontal="100dp"
+    android:paddingVertical="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/editTextFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Введите текст"
+        android:layout_centerHorizontal="true"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/buttonToFourthFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black"
+        android:text="Fragment 4"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@+id/editTextFrag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        />
+</RelativeLayout>
